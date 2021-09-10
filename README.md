@@ -9,19 +9,19 @@ Dango License Manager
 #### 软件架构
 软件采用PHP+Bash开发，无数据库
 - 使用Apache作为Web服务。
-apache版本：
+- apache版本：
 httpd -v
 Server version: Apache/2.4.6 (CentOS)
 Server built:   Nov 16 2020 16:18:20
-php版本：
+- php版本：
 php -v
 PHP 5.4.16 (cli) (built: Apr  1 2020 04:07:17) 
 Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
-OS版本:
+- OS版本:
 cat /etc/redhat-release 
 CentOS Linux release 7.7.1908 (Core)
-Bash版本：
+- Bash版本：
 bash --version
 GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
 Copyright (C) 2011 Free Software Foundation, Inc.
@@ -40,12 +40,12 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
  安装后可直接启动apache 
  systemctl start apache
 3.  配置权限。
- 3.1 配置apache用户root权限。添加sudo
+3.1. 配置apache用户root权限。添加sudo
      vim /etc/sudoer
      添加一行 apache  ALL=(ALL)       NOPASSWD: ALL
- 3.2 配置 scl 目录777权限 chmod -R 777 scl/
- 3.3 配置 daemon 目录 777权限 chmod -R 777 daemon
- 3.4 配置所有文件好目录所属人为“apache”  chown -R Apache:apache *
+3.2 . 配置 scl 目录777权限 chmod -R 777 scl/
+3.3. 配置 daemon 目录 777权限 chmod -R 777 daemon
+3.4. 配置所有文件好目录所属人为“apache”  chown -R Apache:apache *
 
 
 #### 使用说明

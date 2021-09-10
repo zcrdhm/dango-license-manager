@@ -6,24 +6,24 @@ Dango License Manager
 具备上传、启动、重读、停止、查看日志、查看使用等功能。
 可管理flexlm版本，管理daemon版本
 
-#### 软件架构
+#### 开发环境
 软件采用PHP+Bash开发，无数据库
 - 使用Apache作为Web服务。
 - apache版本：</br>
-httpd -v
-Server version: Apache/2.4.6 (CentOS)
+- httpd -v
+- Server version: Apache/2.4.6 (CentOS)
 Server built:   Nov 16 2020 16:18:20
 - php版本：
-php -v
-PHP 5.4.16 (cli) (built: Apr  1 2020 04:07:17) 
+- php -v
+- PHP 5.4.16 (cli) (built: Apr  1 2020 04:07:17) 
 Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 - OS版本:
-cat /etc/redhat-release 
-CentOS Linux release 7.7.1908 (Core)
+- cat /etc/redhat-release 
+- CentOS Linux release 7.7.1908 (Core)
 - Bash版本：
-bash --version
-GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+- bash --version
+- GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
 Copyright (C) 2011 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 

@@ -1,0 +1,9 @@
+<?php
+$synopsys="snpslmd";
+$synopsysport="27000";
+$mentor="mgcld";
+$mentorport="7777";
+$cadence="cdslmd";
+$cadenceport="5280";
+$empyrean="empyrean";
+$empyreanport="59001";

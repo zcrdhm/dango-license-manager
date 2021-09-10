@@ -54,12 +54,18 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 2.  FlexLM 管理flex版本
 3.  Daemon 管理daemon版本
 
+#### 账号密码
+1. 初始账号密码 admin ： 12345.com
+2. 修改密码，生成密码md5值写入 user/admin文件
+3. 增加用户，直接在user下新建一个用户名的文件，写入md5密码值即可
+
+
 #### 参与贡献
 
 尚无
 
 
-作者博客：https://my.oschina.net/u/30594621
+作者博客：https://my.oschina.net/u/3059462
 
 #### 截图
 ![首页截图](https://images.gitee.com/uploads/images/2021/0910/114107_e405e02f_369762.png "index.png")

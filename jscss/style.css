@@ -1,0 +1,10 @@
+.header{overflow:hidden;position:relative;background:#0085d0;margin:auto;font-size:12px;}
+.logo{width:40px;vertical-align:middle;float:left;margin:10px;}
+.comlist{float:left;height:45px;line-height:45px;margin:0;width:100%;border-bottom:1px solid;color:#909399;font-weight:bold;font-size:18px;}
+.liclist{height:45px;line-height:45px;background:#ebeef5;margin:5px;border: 1px solid #000;border-radius: 3px;}
+.daemonlist{min-height:45px;line-height:45px;background:#ebeef5;margin:5px;border: 1px solid #000;border-radius: 3px;}
+.liclistq{width:5%;height:45px;line-height:45px;float:left;border-right: 1px solid #a9aaad}
+.liclistn{width:5%;height:30px;line-height:30px;float:left;border-bottom:1px solid #000;text-align:center;}
+.liclisto{margin-left:5%;height:45px;line-height:45px;border-right: 1px solid #ebeef5}
+.liclistm{margin-left:5%;height:30px;line-height:30px;border-bottom:1px solid #000}
+.button{border-radius: 5px;margin-left: 10px;color: #fff;background-color: #0085d0;border-color: #0085d0;text-align: center;font-size:15px;font-weight:bold;}

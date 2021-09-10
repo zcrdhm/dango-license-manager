@@ -8,7 +8,7 @@ Dango License Manager
 
 #### 软件架构
 软件采用PHP+Bash开发，无数据库
-使用Apache作为Web服务。
+- 使用Apache作为Web服务。
 apache版本：
 httpd -v
 Server version: Apache/2.4.6 (CentOS)

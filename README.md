@@ -7,34 +7,59 @@ Dango License Manager
 可管理flexlm版本，管理daemon版本
 
 #### 软件架构
-软件架构说明
+软件采用PHP+Bash开发，无数据库
+使用Apache作为Web服务。
+apache版本：
+httpd -v
+Server version: Apache/2.4.6 (CentOS)
+Server built:   Nov 16 2020 16:18:20
+php版本：
+php -v
+PHP 5.4.16 (cli) (built: Apr  1 2020 04:07:17) 
+Copyright (c) 1997-2013 The PHP Group
+Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
+OS版本:
+cat /etc/redhat-release 
+CentOS Linux release 7.7.1908 (Core)
+Bash版本：
+bash --version
+GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  安装基础组件。
+ yum install redhat-lsb glibc glibc.i686
+ 确认Flexlm lmgrd工具可正常使用。
+ 确认各厂商daemon工具可正常使用。
+2.  安装基础环境。
+ yum install httpd* php* --skip-broken
+ 安装apache与php
+ 安装后可直接启动apache 
+ systemctl start apache
+3.  配置权限。
+ 3.1 配置apache用户root权限。添加sudo
+     vim /etc/sudoer
+     添加一行 apache  ALL=(ALL)       NOPASSWD: ALL
+ 3.2 配置 scl 目录777权限 chmod -R 777 scl/
+ 3.3 配置 daemon 目录 777权限 chmod -R 777 daemon
+ 3.4 配置所有文件好目录所属人为“apache”  chown -R Apache:apache *
+
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  Manage 管理厂商
+2.  FlexLM 管理flex版本
+3.  Daemon 管理daemon版本
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+尚无
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+作者博客：https://my.oschina.net/u/3059462

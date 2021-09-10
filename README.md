@@ -31,11 +31,11 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 #### 安装教程
 
 1.  安装基础组件。
- yum install redhat-lsb glibc glibc.i686
+ - yum install redhat-lsb glibc glibc.i686
  确认Flexlm lmgrd工具可正常使用。
  确认各厂商daemon工具可正常使用。
 2.  安装基础环境。
- yum install httpd* php* --skip-broken
+ - yum install httpd* php* --skip-broken
  安装apache与php
  安装后可直接启动apache 
  systemctl start apache

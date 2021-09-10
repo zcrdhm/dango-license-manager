@@ -56,15 +56,27 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
 #### 账号密码
 1. 初始账号密码 admin ： 12345.com
-2. 修改密码，生成密码md5值写入 user/admin文件
-3. 增加用户，直接在user下新建一个用户名的文件，写入md5密码值即可
+2. 修改密码，生成密码md5值写入 users/admin文件
+3. 增加用户，直接在users下新建一个用户名的文件，写入md5密码值即可
+
+#### 目录说明
+
+- company ：存储厂商名称和License文件
+- daemon：存储厂商daemon
+- jscss：样式文件
+- license：存储系统根据选择生成的最终启动用license文件
+- log：存储license启动后的log
+- option：存储license所有的option文件
+- scl：存储flexlm软件
+- tmp:存储临时文件，大多临时文件都是用后删除，所以此目录大多是空
+- users：存储用户信息
 
 
 #### 参与贡献
 
 尚无
 
-#### 作者博客：
+#### 作者博客
 
 https://my.oschina.net/u/3059462
 

@@ -40,12 +40,12 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
  安装后可直接启动apache 
  systemctl start apache
 3.  配置权限。
-3.1. 配置apache用户root权限。添加sudo
+- 3.1. 配置apache用户root权限。添加sudo
      vim /etc/sudoer
      添加一行 apache  ALL=(ALL)       NOPASSWD: ALL
-3.2 . 配置 scl 目录777权限 chmod -R 777 scl/
-3.3. 配置 daemon 目录 777权限 chmod -R 777 daemon
-3.4. 配置所有文件好目录所属人为“apache”  chown -R Apache:apache *
+- 3.2 . 配置 scl 目录777权限 chmod -R 777 scl/
+- 3.3. 配置 daemon 目录 777权限 chmod -R 777 daemon
+- 3.4. 配置所有文件好目录所属人为“apache”  chown -R Apache:apache *
 
 
 #### 使用说明

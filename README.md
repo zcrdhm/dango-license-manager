@@ -62,4 +62,4 @@ printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"
 尚无
 
 
-作者博客：https://my.oschina.net/u/3059462
+作者博客：https://my.oschina.net/u/30594621

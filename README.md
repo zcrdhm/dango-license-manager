@@ -60,3 +60,10 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
 
 作者博客：https://my.oschina.net/u/30594621
+
+#### 截图
+![首页截图](https://images.gitee.com/uploads/images/2021/0910/114107_e405e02f_369762.png "index.png")
+![厂商管理](https://images.gitee.com/uploads/images/2021/0910/114127_7396dc2c_369762.png "manage.png")
+![Daemon管理](https://images.gitee.com/uploads/images/2021/0910/114143_c09fb93a_369762.png "daemon.png")
+![Flex管理](https://images.gitee.com/uploads/images/2021/0910/114159_852aa14f_369762.png "flexlm.png")
+![License管理](https://images.gitee.com/uploads/images/2021/0910/114214_18a03cb1_369762.png "company.png")

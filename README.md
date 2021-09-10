@@ -64,8 +64,9 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
 尚无
 
+#### 作者博客：
 
-作者博客：https://my.oschina.net/u/3059462
+https://my.oschina.net/u/3059462
 
 #### 截图
 ![首页截图](https://images.gitee.com/uploads/images/2021/0910/114107_e405e02f_369762.png "index.png")

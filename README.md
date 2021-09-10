@@ -69,3 +69,7 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
 #### 截图
 ![首页截图](https://images.gitee.com/uploads/images/2021/0910/114107_e405e02f_369762.png "index.png")
+![Daemon管理](https://images.gitee.com/uploads/images/2021/0910/135030_eb267ba0_369762.png "daemon.png")
+![Flex管理](https://images.gitee.com/uploads/images/2021/0910/135046_32279fd6_369762.png "flexlm.png")
+![License管理](https://images.gitee.com/uploads/images/2021/0910/135101_c7b6efbd_369762.png "license.png")
+![厂商管理](https://images.gitee.com/uploads/images/2021/0910/135113_483329be_369762.png "manage.png")

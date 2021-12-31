@@ -16,7 +16,7 @@ for($i=0;$i<$comnum;$i++){
 
  #echo $comlist[$i];
  $daemon=${trim($comlist[$i])};
- $daemonv=shell_exec("daemon/".trim($comlist[$i])."/".$daemon." -v|awk '{\$1=\"\";\$2=\"\";\$3=\"\";\$4=\"\";print \$0;\$1}'");
+ $daemonv=shell_exec("daemon/".trim($comlist[$i])."/".$daemon." -v|grep version|awk '{\$1=\"\";\$2=\"\";\$3=\"\";\$4=\"\";print \$0;\$1}'");
  $daemonv=substr($daemonv,"0","54");
  echo "<div class='daemonlist' style='background:#f4f5f5;overflow:hidden'><div style='float:left;min-width:10%;border-right:1px solid;padding-left:10px;'>".trim($comlist[$i])."</div><div style='min-width:10%;float:left;padding-left:10px;border-right:1px solid'><b>".$daemon."</b></div><div><b>Daemon:</b>".$daemonv."<input type='submit' value='Change' onclick='chdaemon(\"".trim($comlist[$i])."\")'></div></div>";
 }

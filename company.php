@@ -69,6 +69,10 @@ function used(){
     document.go.action="used.php";
     document.go.submit();
 }
+function feature(){
+    document.go.action="feature.php";
+    document.go.submit();
+}
 </script>
 
 <div class="liclist">
@@ -115,6 +119,7 @@ if(trim($scllist[$i]) == $lmv){
 <input type=button class='button' value="SeeLog" onclick="seelog()">
 <input type=button class='button' value="Option" <?php echo $stopdis ?> onclick="option()">
 <input type=button class='button' value="Used" <?php echo $stopdis ?> onclick="used()">
+<input type=button class='button' value="Feature" <?php echo $stopdis ?> onclick="feature()">
 <input type=button class='button' value="Del" <?php echo $disable ?> onclick="del()">
 </form>
 

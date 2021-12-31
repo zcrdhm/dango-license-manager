@@ -45,7 +45,8 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
      添加一行 apache  ALL=(ALL)       NOPASSWD: ALL
 - 3.2 . 配置 scl 目录777权限 chmod -R 777 scl/
 - 3.3. 配置 daemon 目录 777权限 chmod -R 777 daemon
-- 3.4. 配置所有文件好目录所属人为“apache”  chown -R Apache:apache *
+- 3.4. 配置所有文件好目录所属人为“apache”  chown -R apache:apache *
+- 3.5. 如果是Redhat6的系统，还需要注释/etc/sudoer文件中的 Defaults    requiretty 这一行
 
 
 #### 使用说明
@@ -71,6 +72,13 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 - tmp:存储临时文件，大多临时文件都是用后删除，所以此目录大多是空
 - users：存储用户信息
 
+#### 使用说明
+
+- 对比Licnese文件中的hostid是否与程序右上角的HOSTID一致
+- 在manage标签配置厂商、daemon和端口号
+- 在daemon中确认使用的daemon版本是否是需要的版本
+- 上传license文件，只要hostid是正确的，无需修改其他内容
+- 勾选license文件，start即可
 
 #### 参与贡献
 

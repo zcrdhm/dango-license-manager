@@ -35,7 +35,7 @@
  header('Content-type:text/html; charset=utf-8');
  session_start();
  if (isset($_POST['login'])) {
- $username = trim($_POST['username']);
+ $username = cleaninput(trim($_POST['username']));
  $password = md5(trim($_POST['password']));
  $realpassword=trim(shell_exec("cat users/".$username));
  if (($username == '') || ($password == '')) {
@@ -59,10 +59,16 @@
   header('location:index.php');
  }
  }
+function cleaninput($input){ 
+    $clean = strtolower($input); 
+    $clean = preg_replace("/[^a-z]/", "", $clean); 
+    $clean = substr($clean,0,12); 
+    return $clean; 
+} 
  ?>
 <script>
 $("document").ready(function(){    
-                //防止在frame里面出现登录页面    
+                //闃叉鍦╢rame閲岄潰鍑虹幇鐧诲綍椤甸潰    
                 if(top.location!==self.location){     
                     //alert(top.location);     
                     //alert(self.location);     
